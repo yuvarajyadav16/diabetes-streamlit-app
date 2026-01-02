@@ -1,6 +1,9 @@
 import streamlit as st
 import pickle
 import numpy as np
+import joblib
+
+model = joblib.load("diabetes_model.pkl")
 
 model = pickle.load(open("diabetes_model.pkl", "rb"))
 
